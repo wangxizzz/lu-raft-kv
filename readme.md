@@ -1,5 +1,7 @@
 ## Lu-Raft-KV-Storage
 
+博客参考网址：https://segmentfault.com/a/1190000017868053
+
 这是一个 Java 版本的 Raft(CP) KV  分布式存储实现. 可用于 Raft 初学者深入学习 Raft 协议. 
 
 相关文章 http://thinkinjava.cn/2019/01/12/2019/2019-01-12-lu-raft-kv/
