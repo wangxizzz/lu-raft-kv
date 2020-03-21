@@ -71,7 +71,7 @@ public class DefaultConsensus implements Consensus {
                     if (node.getLogModule().getLast().getTerm() > param.getLastLogTerm()) {
                         return RvoteResult.fail();
                     }
-                    // 对方没有自己新
+                    // 对方没有自己新(日志需要比较新)
                     if (node.getLogModule().getLastIndex() > param.getLastLogIndex()) {
                         return RvoteResult.fail();
                     }

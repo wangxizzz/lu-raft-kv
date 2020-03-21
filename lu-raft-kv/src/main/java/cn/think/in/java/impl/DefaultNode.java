@@ -700,6 +700,7 @@ public class DefaultNode<T> implements Node<T>, LifeCycle, ClusterMembershipChan
             }
 
             long current = System.currentTimeMillis();
+            // 大于心跳基数，才发送心跳检测
             if (current - preHeartBeatTime < heartBeatTick) {
                 return;
             }
